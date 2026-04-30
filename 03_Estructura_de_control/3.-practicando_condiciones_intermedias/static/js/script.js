@@ -1,5 +1,3 @@
-console.log("Conexion exitosa....");
-
 // EJERCICIO 11
 // Resultado esperado en alert:
 // `El estudiante Juan tiene nota 6.5 y su resultado es: Excelente rendimiento`
@@ -44,10 +42,10 @@ alert(`El correo convertido es: ${correo} y el resultado es: ${texto.toLowerCase
 
 function ejercicio14() {
 let frase="Estoy aprendiendo JavaScript";
-if(frase.length >= 20){
-    alert(`tiene ${frase.length} y es una frase larga `);
-}else if (frase.length >= 11){
-    alert(`tiene ${frase.length} y es frase mediana tiene entre 11 y 20 caracteres`);
+if(frase){
+    alert(`tiene ${frase.length >=20} y es una frase larga `);
+}else if (frase){
+    alert(`tiene ${frase.length >=11} y es frase mediana tiene entre 11 y 20 caracteres`);
 }else{
     alert(`tiene  ${frase.length} y es frase corta tiene entre 10 o menos caracteres`)
 }
@@ -59,66 +57,9 @@ if(frase.length >= 20){
 // `El producto TECLADO tiene un precio final de $45000`
 
 function ejercicio15() {
+let producto = "teclado"
+let precio = 5000
+let descuento = 0.1
+alert(`el producto ${producto.toLocaleUpperCase()} tiene un pecio final $${precio -(precio * descuento)}`)
 
-}
-
-// EJERCICIO 6
-// Resultado esperado en alert:
-// "Es mayor de edad"
-
-function ejercicio16() {
-    let edad = 20;
-    if (edad >= 18) {
-        alert(`eres mayor de edad`);
-    } else {
-        alert(`es menor de edad`);
-    }
-}
-
-
-// EJERCICIO 7
-// Resultado esperado en alert:
-// "El número es par"
-
-function ejercicio17() {
-    let numero = 21;
-    if (numero % 2 == 0) {
-        alert(`el numero es par`)
-    } else {
-        alert(`EL numero es impar`)
-    }
-}
-
-
-// EJERCICIO 8
-// Resultado esperado en alert:
-// "Estudiante aprobado"
-
-function ejercicio18(){}
-
-
-
-// EJERCICIO 9
-// Resultado esperado en alert:
-// "Precio final con descuento: $18000"
-
-function ejercicio19() {
-    let Precioproducto = 20000
-    let descuento = 0.1;
-    alert(`precio final con descuento ${Precioproducto * descuento}`)
-}
-
-
-// EJERCICIO 10
-// Resultado esperado en alert:
-// "El número mayor es: 22"
-
-function ejercicio10() {
-    let num1 = 10;
-    let num2 = 5;
-    if (num1 = num2) {
-        alert(`El numero mayor es: ${num1}`)
-    } else {
-        alert(`El numero mayor es: ${num2}`)
-    }
 }
